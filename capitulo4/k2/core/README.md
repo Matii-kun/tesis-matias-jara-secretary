@@ -1,1 +1,0 @@
-Implementación central del programa dinámico para k = 2.
