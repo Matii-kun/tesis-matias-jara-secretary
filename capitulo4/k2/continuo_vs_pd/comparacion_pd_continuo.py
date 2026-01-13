@@ -9,9 +9,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Permite importar desde programa_dinamico
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+#sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
-from programa_dinamico.pd_k2 import dynamic_programming_k2
+#from programa_dinamico.pd_k2 import dynamic_programming_k2
 
 
 # Valores óptimos del análisis continuo
@@ -29,13 +29,18 @@ r1_values = []
 r2_values = []
 
 N = 200
-n_values = np.arange(2, N + 1, 1)   # desde 2 hasta N (incluye N)
+n_values = np.arange(3, N + 1, 1)   # desde 2 hasta N (incluye N)
 
 for i in n_values:
     v, r = dynamic_programming_k2(i)
-    PD_values.append(v)
-    r1_values.append(r[0] / i)
-    r2_values.append(r[1] / i)
+    if i==2:
+        PD_values.append(v)
+        r1_values.append(0/i)
+        r2_values.append(1/i)
+    else:    
+        PD_values.append(v)
+        r1_values.append((r[0]) / i)
+        r2_values.append((r[1]) / i)
 
 fig, axs = plt.subplots(2, 1, figsize=(8, 8))
 
