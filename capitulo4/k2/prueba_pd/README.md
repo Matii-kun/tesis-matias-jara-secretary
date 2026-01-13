@@ -1,0 +1,1 @@
+Verificaciones computacionales del programa dinámico para k = 2.
