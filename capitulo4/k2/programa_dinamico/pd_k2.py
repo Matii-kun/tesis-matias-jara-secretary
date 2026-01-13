@@ -93,8 +93,8 @@ def dynamic_programming_k2(N, verbose=False):
         if all(t is not None for t in tiempos):
             break
     if verbose==True:
-      print(F)
-      print(D)
+      print(F[1:,:,:])
+      print(D[1:,:,:])
 
     valor = F[1, 1, 0]  
     return valor, tiempos
