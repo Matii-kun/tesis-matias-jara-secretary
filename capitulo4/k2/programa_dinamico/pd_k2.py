@@ -84,7 +84,7 @@ def dynamic_programming_k2(N, verbose=False):
 
     # Extracción de tiempos
     tiempos = [None, None]
-    for r in range(2, N+1):
+    for r in range(1, N+1):
         rr = r - 1
         if tiempos[0] is None and D[r, 1, 0] == 1:
             tiempos[0] = rr
