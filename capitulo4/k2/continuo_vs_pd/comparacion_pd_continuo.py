@@ -29,7 +29,7 @@ r1_values = []
 r2_values = []
 
 N = 200
-n_values = np.arange(3, N + 1, 1)   # desde 2 hasta N (incluye N)
+n_values = np.arange(2, N + 1, 1)   # desde 2 hasta N (incluye N)
 
 for i in n_values:
     v, r = dynamic_programming_k2(i)
