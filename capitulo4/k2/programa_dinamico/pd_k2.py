@@ -2,7 +2,7 @@ import numpy as np
 
 def dynamic_programming_k2(N, verbose=False):
     """
-    Programa dinámico para el Secretary Problem pesimista con k = 2.
+    Programa dinámico para el problema Todo o nada con k = 2.
 
     Parámetros
     ----------
