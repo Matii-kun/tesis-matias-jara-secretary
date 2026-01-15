@@ -92,9 +92,14 @@ def dynamic_programming_k2(N, verbose=False):
             tiempos[1] = rr
         if all(t is not None for t in tiempos):
             break
-    if verbose==True:
-      print(F[1:,:,:])
-      print(D[1:,:,:])
+            
+    if verbose:
+        print("Matrices de valores F")
+        print(F[1:,:,:])
+        print()
+        print("Matrices de decisiones D")
+        print(D[1:,:,:])
+        print()
 
     valor = F[1, 1, 0]  
     return valor, tiempos
