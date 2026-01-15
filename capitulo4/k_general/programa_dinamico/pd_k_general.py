@@ -108,8 +108,8 @@ def dynamic_programming_k_general(N, k, verbose=False):
                 break
 
     if verbose:
-        print(F)
-        print(D)
+        print(F[1:,:,:])
+        print(D[1:,:,:])
 
     valor = F[1, 1, 0]
     return valor, tiempos
